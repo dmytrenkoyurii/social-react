@@ -10,3 +10,24 @@
     margin-right: 15px;
     border-radius: 5px;
 }
+
+.item .item_like {
+    background-color: white;
+    padding: 2px 3px;
+    border-radius: 13px;
+    color: black;
+    font-size: 12px;
+    width: 40px;
+}
+
+.item .item_like span{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item .item_like img{
+    width: 14px;
+    height: auto;
+    margin-right: 0;
+    padding: 0 2px 2px;
+}
