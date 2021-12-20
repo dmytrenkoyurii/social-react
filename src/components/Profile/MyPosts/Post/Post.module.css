@@ -1,0 +1,12 @@
+.item {
+    color: greenyellow;
+    margin-bottom: 30px;
+}
+
+.item img{
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 5px;
+}
