@@ -5,7 +5,9 @@
 }
 
 .item {
+    display: block;
     color: white;
+    text-decoration: none;
 }
 
 .item.active {
