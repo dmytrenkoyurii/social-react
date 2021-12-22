@@ -1,26 +1,31 @@
-.dialogs{
+.dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
 
-.dialogsItems{
+.dialogsItems {
 
 }
 
-.dialog a{
+.dialog a {
     display: block;
     padding: 10px 5px;
     border: 1px solid #fff;
 }
 
-.dialog.active{
+.dialog.active {
     color: gray;
 }
 
-.messages{
+.userImg {
+    height: 16px;
+    padding: 0 10px 0 5px
+}
+
+.messages {
     padding-left: 30px;
 }
 
-.message{
+.message {
 
 }
