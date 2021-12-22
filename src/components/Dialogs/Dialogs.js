@@ -3,7 +3,7 @@ import s from './Dialogs.module.css'
 import {NavLink} from "react-router-dom";
 
 const DialogItem = (props) => {
-    let path = "/dialogs/1" + props.id;
+    let path = "/dialogs/" + props.id;
 
     return (
         <div className={s.dialog + ' ' + s.active}>
@@ -21,22 +21,40 @@ const Message = (props) => {
     )
 }
 
-const Dialogs = () => {
+const Dialogs = (props) => {
+
+    let dialogsData = [
+        {id: '1', name: 'Yurii'},
+        {id: '2', name: 'Vlad'},
+        {id: '3', name: 'Ihor'},
+        {id: '4', name: 'Stas'},
+        {id: '5', name: 'Vitaliy'},
+        {id: '6', name: 'Andriy'},
+        {id: '7', name: 'Roman'},
+    ]
+
+    let messagesData = [
+        {id: '1', message: 'Hi'},
+        {id: '2', message: 'How are you?'},
+        {id: '3', message: 'What are you working on?'},
+    ]
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem id="1" name="Yurii"/>
-                <DialogItem id="2" name="Vlad"/>
-                <DialogItem id="3" name="Ihor"/>
-                <DialogItem id="4" name="Stas"/>
-                <DialogItem id="5" name="Vitaliy"/>
-                <DialogItem id="6" name="Andriy"/>
-                <DialogItem id="7" name="Roman"/>
+                <DialogItem id={dialogsData[0].id} name={dialogsData[0].name}/>
+                <DialogItem id={dialogsData[1].id} name={dialogsData[1].name}/>
+                <DialogItem id={dialogsData[2].id} name={dialogsData[2].name}/>
+                <DialogItem id={dialogsData[3].id} name={dialogsData[3].name}/>
+                <DialogItem id={dialogsData[4].id} name={dialogsData[4].name}/>
+                <DialogItem id={dialogsData[5].id} name={dialogsData[5].name}/>
+                <DialogItem id={dialogsData[6].id} name={dialogsData[6].name}/>
+
             </div>
             <div className={s.messages}>
-                <Message message="Hi"/>
-                <Message message="How are you?"/>
-                <Message message="What are you working on?"/>
+                <Message message={messagesData[0].message}/>
+                <Message message={messagesData[1].message}/>
+                <Message message={messagesData[2].message}/>
             </div>
         </div>
     )
