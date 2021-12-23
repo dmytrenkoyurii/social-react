@@ -4,13 +4,13 @@
 }
 
 .dialogsItems {
-
 }
 
 .dialog a {
     display: block;
     padding: 10px 5px;
     border: 1px solid #fff;
+    color: #ffffff;
 }
 
 .dialog.active {
@@ -27,5 +27,6 @@
 }
 
 .message {
+    color: #ffffff;
 
 }
