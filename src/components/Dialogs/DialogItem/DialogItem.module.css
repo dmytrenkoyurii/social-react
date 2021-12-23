@@ -1,8 +1,9 @@
-.dialog a {
+.dialog {
     display: block;
     padding: 10px 5px;
     border: 1px solid #fff;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .dialog.active {
