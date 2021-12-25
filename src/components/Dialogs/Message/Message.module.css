@@ -1,4 +1,38 @@
 .message {
     color: #ffffff;
-
+    display: flex;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    width: calc(100% - 45px);
 }
+
+.messageImg {
+    height: 30px;
+    padding: 0 10px 0 5px
+}
+
+.message p {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.message:nth-child(odd) {
+    margin-right: 45px;
+}
+
+.message:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 45px;
+}
+
+.message:nth-child(even) .messageImg {
+    padding: 0 5px 0 10px
+}
+
+.message:nth-child(even) p {
+    text-align: right;
+}
+
+

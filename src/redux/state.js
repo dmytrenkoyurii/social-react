@@ -18,9 +18,16 @@ let state = {
         ],
         message: [
             {id: '1', message: 'Hi'},
-            {id: '2', message: 'How are you?'},
+            {id: '2', message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'},
             {id: '3', message: 'What are you working on?'}
         ]
+    },
+    sidebar: {
+        friends: [
+            {id: '1', name: 'Vlad'},
+            {id: '2', name: 'Stas'},
+            {id: '3', name: 'Andriy'},
+        ],
     }
 }
 

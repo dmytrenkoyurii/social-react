@@ -1,0 +1,18 @@
+.friend {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.friend img {
+    width: 45px;
+    max-width: fit-content;
+    padding: 0 5px;
+}
+
+.friend h5 {
+    padding: 0 5px;
+    margin: 5px 0;
+}
