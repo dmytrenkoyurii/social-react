@@ -7,5 +7,14 @@
 }
 
 .messages {
-    padding: 0 30px;
+    padding: 0 30px 60px;
+    width: calc(100% - 60px);
+    position: relative;
+}
+
+.addMessage{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 60px);
 }

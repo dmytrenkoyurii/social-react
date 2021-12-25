@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    width: 30%;
 }
 
 .friend img {
-    width: 45px;
+    width: 100%;
     max-width: fit-content;
     padding: 0 5px;
 }
