@@ -23,7 +23,9 @@ let state = {
             {id: '1', message: 'Hi'},
             {id: '2', message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'},
             {id: '3', message: 'What are you working on?'}
-        ]
+        ],
+        newMessageText: '',
+
     },
     sidebar: {
         friends: [
@@ -47,6 +49,20 @@ export let addPost = () =>{
 
 export let updateNewPostText = (newText) =>{
     state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export let addMessage = () =>{
+    let newMessage = {
+        message: state.dialogsPage.newMessageText,
+    }
+    state.dialogsPage.message.push(newMessage);
+    state.dialogsPage.newMessageText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewMessageText = (newMessage) =>{
+    state.dialogsPage.newMessageText = newMessage;
     rerenderEntireTree(state);
 }
 
